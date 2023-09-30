@@ -14,6 +14,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #fde29339;
+}
+
 .header {
     background-color: #fde293;
     display: flex;
@@ -36,7 +40,6 @@ html {
 }
 
 .content__wrapper {
-    background-color: #fde29339;
     padding: 40px;
     border-radius: ;
 }
@@ -60,6 +63,7 @@ html {
     background-color: rgb(234, 67, 53);
     border-radius: 25px;
     max-width: 500px;
+    padding-bottom: 90px;
 }
 
 .form__input {
