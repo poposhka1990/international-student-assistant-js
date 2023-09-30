@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./insurance.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
     <title>Страховка</title>
 </head>
 <body>
-    
+    <header class="header">
+        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
+        <a class="header__title" href="../../index.html">
+            <h1>Помощник иностранного студента</h1>
+        </a>
+        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
+    </header>
+    <main class="content__wrapper">
+        <h2 class="content__title">Форма заявки на оформление медицинской страховки</h2>
+        <form class="form">
+            <img src="../../assets/img/insurance.png" class="content__image">
+
+                <label class="form__input_label" for="name">Фамилия и имя:</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Введите своё полное имя">
+
+                <label class="form__input_label" for="email">Адрес электронной почты:</label>
+                <input class="form__input" id="email" type="email" name="email" placeholder="Введите свою электронную почту">
+
+                <label class="form__input_label" for="phone">Номер телефона +7</label>
+                <input class="form__input" id="phone" type="tel" name="tel" placeholder="Введите свой номер телефона">
+
+                <div class="form-checkbox">
+                    <input class="form-checkbox__input" type="checkbox" checked id="checkbox" name="checkbox">
+                    <div class="form-checkbox__box"></div>
+                    <label class="form__input_label" for="check">Даю согласие на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="form__button">Отправить форму</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
+        <div class="footer__links">
+            <a href="mailto:rvo@petrsu.ru">По всем предложениям и вопросам пишите нам</a>
+             <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
+        </div>
+    </footer>
 </body>
 </html>
