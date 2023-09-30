@@ -125,10 +125,20 @@ html {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
     .header__image {
-        visibility: hidden;
-        opacity: 0;
         display: none;
+    }
+    .header__logo {
+        display: none;
+    }
+
+    .content__title {
+        font-size: 20px;
+    }
+
+    .service-container {
+        margin: 10px;
+        width: 85vw;
     }
 }
