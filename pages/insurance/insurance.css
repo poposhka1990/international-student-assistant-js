@@ -54,12 +54,12 @@ html {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-weight: 300;
+    align-items: center;
     margin: 0 auto;
     background-color: rgb(234, 67, 53);
     border-radius: 25px;
-    width: 50vw;
+    max-width: 500px;
 }
 
 .form__input {
@@ -68,6 +68,7 @@ html {
 
 .form__input_label{
     font-size: 25px;
+    max-width: 310px;
 }
 
 .form__input {
@@ -82,11 +83,24 @@ html {
     transition: all 0.3s ease-in;
 }
 
+.form__checkbox_container {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+.form__checkbox_container > .form__input_label {
+    font-size: 15px;
+    text-align: center;
+    margin-left: -9px;
+}
+
 .form__button {
     margin: 20px;
     padding: 15px;
     font-size: 25px;
     border-radius: 15px;
+    width: 90%;
 }
 
 .service-container:hover {
