@@ -28,6 +28,11 @@ html {
     text-align: center;
 }
 
+.header__title:hover {
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
 .header__logo {
     width: 150px;
 }
@@ -77,11 +82,11 @@ html {
 }
 
 .insurance {
-    background-color: rgb(234, 67, 53);
+    background-color: rgba(234, 68, 53, 0.832);
 }
 
 .arrival {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.816);
 }
 
 .visa {
@@ -89,7 +94,7 @@ html {
 }
 
 .departure {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.649);
 }
 
 .test {
@@ -97,14 +102,14 @@ html {
 }
 
 .certificate {
-    background-color: rgba(0, 0, 254, 0.552);
+    background-color: rgba(0, 0, 254, 0.401);
 }
 
 .development {
     position: absolute;
-    right: -25px;
-    top: -25px;
-    background-color: darkblue;
+    right: -35px;
+    top: -35px;
+    background-color: rgba(0, 0, 139, 0.599);
     border-radius: 50%;
     padding-top: 25px;
     width: 80px;
@@ -112,6 +117,10 @@ html {
     font-size: 10px;
     text-align: center;
     vertical-align: middle;
+}
+
+.service-container:hover && .development {
+    background-color: #fde293;
 }
 
 .inner-container__title {
@@ -153,7 +162,7 @@ html {
     }
 
     .service-container {
-        margin: 10px;
+        margin: 20px;
         width: 85vw;
     }
 }
