@@ -1,0 +1,134 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: white;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #fde293;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header__image {
+    width: 150px;
+}
+
+.header__title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.content__title {
+    border: 5px solid #fde2937d;
+    font-size: 45px;
+    line-height: 1.1;
+    letter-spacing: 5.5;
+    text-align: center;
+    font-weight: 500;
+    padding: 40px;
+}
+
+.containers {
+    background-color: #fde29339;
+    justify-content: center;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-container {
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-container:hover {
+    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+.service__link:hover {
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+.insurance {
+    background-color: rgb(234, 67, 53);
+}
+
+.arrival {
+    background-color: orange;
+}
+
+.visa {
+    background-color: #fde293;
+}
+
+.departure {
+    background-color: green;
+}
+
+.test {
+    background-color: rgba(153, 153, 229, 0.714);
+}
+
+.certificate {
+    background-color: rgba(0, 0, 254, 0.552);
+}
+
+.inner-container__title {
+    font-size: 25px;
+}
+
+.inner-container__image {
+    width: 100px;
+    padding: 20px;
+}
+
+.inner-container__text {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.footer {
+    background-color: #fde293;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__links {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 720px) {
+    .header__image {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}

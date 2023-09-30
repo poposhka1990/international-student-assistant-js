@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheets" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <title>Помощник иностранного студента</title>
 </head>
 <body>
-    
+    <header class="header">
+        <img src="./assets/favicon_io/android-chrome-192x192.png" class="header__image">
+        <a class="header__title" href="./index.html">
+            <h1>Помощник иностранного студента</h1>
+        </a>
+        <img src="./assets/img/ISA-logo.jpg" class="header__logo">
+    </header>
+    <main class="content__wrapper">
+        <h2 class="content__title">Сервисы для иностранных студентов ПетрГУ*</h2>
+        <div class="containers">
+            <div class="service-container insurance">
+                <a href="./pages/insurance/insurance.html" class="service__link">
+                        <h3 class="inner-container__title">Страховка</h3>
+                        <img src="./assets/img/insurance.png" class="inner-container__image">
+                        <p class="inner-container__text">Оставь заявку на оформление новой страховки</p>
+                </a>
+            </div>
+            <div class="service-container arrival">
+                <a href="./pages/arrival/arrival.html" class="service__link">
+                        <h3 class="inner-container__title">Я приехал!</h3>
+                        <img src="./assets/img/arrival.png" class="inner-container__image">
+                        <p class="inner-container__text">Сообщи о своем возвращении в Россию на учёбу вовремя</p>
+                </a>
+            </div>
+            <div class="service-container visa">
+                <a href="./pages/visa/visa.html" class="service__link">
+                        <h3 class="inner-container__title">Визовый калькулятор</h3>
+                        <img src="./assets/img/visa.png" class="inner-container__image">
+                        <p class="inner-container__text black-text">Расcчитай когда нужно продлевать учебную визу</p>
+                </a>
+            </div>
+            <div class="service-container departure">
+                <a href="./pages/departure/departure.html" class="service__link">
+                        <h3 class="inner-container__title">Еду домой</h3>
+                        <img src="./assets/img/departure.png" class="inner-container__image">
+                        <p class="inner-container__text">Проинформируй о своем отъезде домой на каникулы</p>
+                </a>
+            </div>
+            <div class="service-container test">
+                <a href="./pages/test/test.html" class="service__link">
+                        <h3 class="inner-container__title">Тест по миграционному законодательству</h3>
+                        <img src="./assets/img/test.png" class="inner-container__image">
+                        <p class="inner-container__text">Проверь свои знания</p>
+                </a>
+            </div>
+            <div class="service-container certificate">
+                <a href="./pages/certificate/certificate.html" class="service__link">
+                        <h3 class="inner-container__title">Мне нужна справка</h3>
+                        <img src="./assets/img/certificate.png" class="inner-container__image">
+                        <p class="inner-container__text">Закажи необходимую справку</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
+        <div class="footer__links">
+            <a href="mailto:rvo@petrsu.ru">По всем предложениям и вопросам пишите нам</a>
+             <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
+        </div>
+    </footer>
 </body>
 </html>
