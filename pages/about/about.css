@@ -58,19 +58,6 @@ body {
     padding: 10px;
 }
 
-.form {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-weight: 300;
-    align-items: center;
-    margin: 0 auto;
-    background-color: #fde293;
-    border-radius: 25px;
-    max-width: 500px;
-    padding-bottom: 90px;
-}
-
 .about {
     color: white;
     display: flex;
@@ -81,11 +68,10 @@ body {
     background-color: #fde293;
     border-radius: 25px;
     max-width: 500px;
-    padding-bottom: 90px;
 }
 
-.video {
-    width: 90%;
+.descrition {
+    margin-bottom: 20px;
 }
 
 .form__button {
