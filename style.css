@@ -24,8 +24,8 @@ body {
 }
 
 .header__image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .header__title {
@@ -59,8 +59,8 @@ body {
 }
 
 .header__logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .header__links {
