@@ -142,9 +142,6 @@ body {
     background-color: rgba(153, 153, 229, 0.714);
     padding: 20px;
     text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 .footer__links {
