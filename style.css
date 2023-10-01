@@ -14,27 +14,43 @@ html {
 .header {
     background-color: #fde293;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
 }
 
 .header__image {
-    width: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .header__title {
     font-size: 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.header__title:hover {
+.header__title:hover  {
     color: black;
     transition: all 0.3s ease-in;
 }
 
 .header__logo {
-    width: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.header__links {
+    text-align: center;
+}
+
+.header__link:hover {
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+td {
+    padding: 20px;
+    font-size: 25px;
 }
 
 .content__title {

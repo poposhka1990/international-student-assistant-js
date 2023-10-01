@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./certificate.css">
+    <link rel="stylesheet" href="./visa.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
@@ -11,25 +11,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
-    <title>Мне нужна справка</title>
+    <title>Визовый калькулятор</title>
 </head>
 <body>
     <header class="header">
-        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
+        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
         <a class="header__title" href="../../index.html">
             <h1>Помощник иностранного студента</h1>
         </a>
-        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
+        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
     </header>
     <main class="content__wrapper">
-        <h2 class="content__title">Заявка на оформление справки</h2>
-        <div class="certificate">
-            <img src="../../assets/img/certificate.png" class="content__image">
+        <h2 class="content__title">Визовый калькулятор</h2>
+        <form class="form" action="./visa-result.html">
+            <img src="../../assets/img/visa.png" class="content__image">
 
-               <p class="form__input_label">Вы можете заказать справку об обучении на русском или английском языках, а также необходимые справки для РВПО. Просим указать необходимую справку, язык и ваше имя и фамилию в письме по нажатию кнопки ниже.</p>
+                <label class="form__input_label" for="visa-date">Введите дату окончания вашей действующей визы:</label>
+                <input class="form__input" id="visa-date" type="date" name="visa-date">
 
-                <button class="form__button"><a href="mailto:rvo@petrsu.ru?subject=Я%20приехал(а)&body=Отправляю%20скан%20миграционной%20карты" class="button__link">Заказать справку</a></button>
-        </div>
+                <label class="form__input_label" for="passport-date">Введите дату окончания своего паспорта:</label>
+                <input class="form__input" id="passport-date" type="date" name="passport-date">
+
+                <button class="form__button">Рассчитать</button>
+        </form>
     </main>
     <footer class="footer">
         <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
@@ -38,5 +42,6 @@
              <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
         </div>
     </footer>
+    <script src="./visa.js"></script>
 </body>
 </html>

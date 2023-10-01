@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./insurance.css">
+    <link rel="stylesheet" href="./certificate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
@@ -11,39 +11,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
-    <title>Страховка</title>
+    <title>Мне нужна справка</title>
 </head>
 <body>
     <header class="header">
-        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
+        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
         <a class="header__title" href="../../index.html">
             <h1>Помощник иностранного студента</h1>
         </a>
-        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
+        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
     </header>
     <main class="content__wrapper">
-        <h2 class="content__title">Форма заявки на оформление медицинской страховки</h2>
-        <form class="form">
-            <img src="../../assets/img/insurance.png" class="content__image">
+        <h2 class="content__title">Заявка на оформление справки</h2>
+        <div class="certificate">
+            <img src="../../assets/img/certificate.png" class="content__image">
 
-                <label class="form__input_label" for="name">Фамилия и имя:</label>
-                <input class="form__input" id="name" type="text" name="name" placeholder="Введите своё полное имя">
+               <p class="form__input_label">Вы можете заказать справку об обучении на русском или английском языках, а также необходимые справки для РВПО. Просим указать необходимую справку, язык и ваше имя и фамилию в письме по нажатию кнопки ниже.</p>
 
-                <label class="form__input_label" for="email">Адрес электронной почты:</label>
-                <input class="form__input" id="email" type="email" name="email" placeholder="Введите свою электронную почту">
-
-                <label class="form__input_label" for="phone">Номер телефона</label>
-                <div class="phone">
-                    <input class="form__input" id="phone" type="tel" name="tel" placeholder="Введите свой номер телефона">
-                </div>
-
-                <div class="form__checkbox_container">
-                    <input class="form-checkbox__input" type="checkbox" checked id="checkbox" name="checkbox">
-                    <label class="form__input_label checkbox__label" for="check">Даю согласие на обработку персональных данных</label>
-                </div>
-
-                <button class="form__button">Отправить форму</button>
-        </form>
+                <button class="form__button"><a href="mailto:rvo@petrsu.ru?subject=Я%20приехал(а)&body=Отправляю%20скан%20миграционной%20карты" class="button__link">Заказать справку</a></button>
+        </div>
     </main>
     <footer class="footer">
         <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>

@@ -15,25 +15,21 @@
 </head>
 <body>
     <header class="header">
-        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
+        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
         <a class="header__title" href="../../index.html">
             <h1>Помощник иностранного студента</h1>
         </a>
-        <img src="../../assets/img/ISA-logo.jpg" class="header__logo">
+        <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
     </header>
     <main class="content__wrapper">
         <h2 class="content__title">Визовый калькулятор</h2>
-        <form class="form" action="./visa-result.html">
+        <div class="result">
             <img src="../../assets/img/visa.png" class="content__image">
 
-                <label class="form__input_label" for="visa-date">Введите дату окончания вашей действующей визы:</label>
-                <input class="form__input" id="visa-date" type="date" name="visa-date">
+                <p>Крайний срок подачи документов на визу:</p>
 
-                <label class="form__input_label" for="passport-date">Введите дату окончания своего паспорта:</label>
-                <input class="form__input" id="passport-date" type="date" name="passport-date">
-
-                <button class="form__button">Рассчитать</button>
-        </form>
+                <button class="form__button" onclick="document.location='./visa.html'">Назад</button>
+        </div>
     </main>
     <footer class="footer">
         <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
@@ -42,6 +38,5 @@
              <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
         </div>
     </footer>
-    <script src="./visa.js"></script>
 </body>
 </html>
