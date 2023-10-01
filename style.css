@@ -11,6 +11,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #fde29339;
+}
+
 .header {
     background-color: #fde293;
     display: flex;
@@ -54,7 +58,6 @@ td {
 }
 
 .content__title {
-    border: 5px solid #fde2937d;
     font-size: 45px;
     line-height: 1.1;
     letter-spacing: 5.5;
@@ -64,7 +67,6 @@ td {
 }
 
 .containers {
-    background-color: #fde29339;
     justify-content: center;
     font-weight: 300;
     display: flex;
