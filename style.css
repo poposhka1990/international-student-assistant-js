@@ -18,8 +18,9 @@ body {
 .header {
     background-color: #fde293;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0 20px;
 }
 
 .header__image {
@@ -38,6 +39,25 @@ body {
     transition: all 0.3s ease-in;
 }
 
+.link-ease-in-out a {
+    display: inline-block;
+    cursor: pointer;
+}
+.link-ease-in-out a:after {
+    background-color: black; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
+
 .header__logo {
     width: 100px;
     height: 100px;
@@ -53,7 +73,6 @@ body {
 }
 
 td {
-    padding: 20px;
     font-size: 25px;
 }
 
