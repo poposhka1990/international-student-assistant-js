@@ -18,11 +18,8 @@ body {
     background-color: #fde29339;
 }
 
-h3 {
-    text-align: center;
-}
 .header {
-    background-color: rgba(153, 153, 229, 0.714);
+    background-color: #fde293;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,50 +58,20 @@ h3 {
     padding: 10px;
 }
 
-.test {
+.about {
     color: white;
     display: flex;
     flex-direction: column;
     font-weight: 300;
     align-items: center;
     margin: 0 auto;
-    background-color: rgba(153, 153, 229, 0.714);
+    background-color: #fde293;
     border-radius: 25px;
     max-width: 500px;
-    padding-bottom: 90px;
 }
 
-.form__input {
-    margin-bottom: 10px;
-}
-
-.form__input_label{
-    font-size: 25px;
-    max-width: 310px;
-}
-
-.form__input {
-    width: 300px;
-    height: 55px;
-    border-radius: 15px;
-}
-
-.form__input:focus {
-    border: 3px solid black;
-    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
-    transition: all 0.3s ease-in;
-}
-
-.form__checkbox_container {
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-}
-
-.form__checkbox_container > .form__input_label {
-    font-size: 15px;
-    text-align: center;
-    margin-left: -9px;
+.descrition {
+    margin-bottom: 20px;
 }
 
 .form__button {
@@ -118,7 +85,7 @@ h3 {
 .form__button:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     transition: all 0.3s ease-in;
-    background-color: rgba(153, 153, 229, 0.714);
+    background-color: #fde293;
     color: white;
 }
 
@@ -128,10 +95,6 @@ h3 {
     transition: all 0.3s ease-in;
 }
 
-.service__link:hover {
-    color: black;
-    transition: all 0.3s ease-in;
-}
 .inner-container__title {
     font-size: 25px;
 }
@@ -142,7 +105,7 @@ h3 {
 }
 
 .footer {
-    background-color: rgba(153, 153, 229, 0.714);
+    background-color: #fde293;
     padding: 20px;
     text-align: center;
 }
