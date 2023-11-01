@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+<!--    <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">-->
     <title>О проекте</title>
 </head>
 <body>
@@ -22,22 +22,26 @@
     <img src="../../assets/favicon_io/android-chrome-192x192.png" class="header__image">
 </header>
 <main class="content__wrapper">
-    <h2 class="content__title">О проекте "Помощник иностранного студента"</h2>
+    <h2 class="content__title">Последние новости и объявления</h2>
     <div class="about">
-        <img src="../../assets/img/about.png" class="content__image">
-
-        <p class="description">Благодарим тебя за то, что заглянул сюда.</p>
-
-
-        <button class="form__button" onclick="document.location='../../index.html'">Назад</button>
+            <div class="news">
+                <script async src="https://telegram.org/js/telegram-widget.js?22"
+                        data-telegram-post="petrsu_international/82"
+                        data-width="100%" class="telegram-post">
+                </script>
+            </div>
+            <button class="form__button" type="button">Предыдущие новости</button>
     </div>
 </main>
 <footer class="footer">
-    <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
+    <p>* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ.
+        Основан на нормах миграционного законодательства РФ, актуальных на 2023 год,
+        и правоприменительной практике в Республике Карелия.</p>
     <div class="footer__links">
         <a href="mailto:rvo@petrsu.ru">По всем предложениям и вопросам пишите нам</a>
         <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
     </div>
 </footer>
+<script src="./news.js"></script>
 </body>
 </html>

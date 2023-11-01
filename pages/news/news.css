@@ -65,7 +65,11 @@ body {
     margin: 0 auto;
     background-color: #fde293;
     border-radius: 25px;
-    max-width: 500px;
+}
+
+.news {
+    padding-top: 40px;
+    width: 100%;
 }
 
 .description {
