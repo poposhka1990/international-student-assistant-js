@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: rgba(0, 0, 254, 0.401);
+    background-color: rgb(184, 184, 224);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,9 +65,8 @@ body {
     font-weight: 300;
     align-items: center;
     margin: 0 auto;
-    background-color: rgba(0, 0, 254, 0.401);
+    background-color: rgb(184, 184, 224);
     border-radius: 25px;
-    max-width: 500px;
     padding-bottom: 90px;
 }
 
@@ -135,7 +134,7 @@ body {
 }
 
 .footer {
-    background-color: rgba(0, 0, 254, 0.401);
+    background-color: rgb(184, 184, 224);
     padding: 20px;
     text-align: center;
 }

@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: rgba(255, 166, 0, 0.816);
+    background-color: rgb(255, 166, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,9 +65,8 @@ body {
     font-weight: 300;
     align-items: center;
     margin: 0 auto;
-    background-color: rgba(255, 166, 0, 0.816);
+    background-color: rgb(255, 166, 0);
     border-radius: 25px;
-    max-width: 500px;
     padding-bottom: 90px;
 }
 
@@ -115,7 +114,7 @@ body {
 .form__button:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     transition: all 0.3s ease-in;
-    background-color: rgba(255, 166, 0, 0.816);
+    background-color: #ffa600d0;
 }
 
 .button__link {

@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: rgba(0, 128, 0, 0.649);
+    background-color: rgb(0, 128, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,9 +65,8 @@ body {
     font-weight: 300;
     align-items: center;
     margin: 0 auto;
-    background-color: rgba(0, 128, 0, 0.649);
+    background-color: rgb(0, 128, 0);
     border-radius: 25px;
-    max-width: 500px;
     padding-bottom: 90px;
 }
 
@@ -115,7 +114,7 @@ body {
 .form__button:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     transition: all 0.3s ease-in;
-    background-color: rgba(0, 128, 0, 0.649);
+    background-color: rgb(0, 128, 0);
 }
 
 .button__link {
@@ -146,7 +145,7 @@ body {
 }
 
 .footer {
-    background-color: rgba(0, 128, 0, 0.649);
+    background-color: rgb(0, 128, 0);
     padding: 20px;
     text-align: center;
 }

@@ -67,7 +67,7 @@ body {
     margin: 0 auto;
     background-color: rgb(234, 67, 53);
     border-radius: 25px;
-    max-width: 500px;
+    /* max-width: 500px; */
     padding-bottom: 90px;
 }
 
@@ -154,13 +154,15 @@ body {
     font-size: 25px;
     border-radius: 15px;
     width: 90%;
+    color: white;
+    background-color: rgb(229, 139, 131);
 }
 
 .form__button:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     transition: all 0.3s ease-in;
     background-color: rgb(229, 139, 131);
-    color: white;
+    color: black;
 }
 
 .service-container:hover {
