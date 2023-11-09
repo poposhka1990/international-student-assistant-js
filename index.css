@@ -48,9 +48,8 @@ body {
     display: block;
     content: "";
     height: 2px; /* Высота линии */
-    width: 0%;
+    width: 0;
     -webkit-transition: width .4s ease-in-out;
-    -moz--transition: width .4s ease-in-out;
     transition: width .4s ease-in-out;
 }
 .link-ease-in-out a:hover:after,
@@ -79,7 +78,6 @@ td {
 .content__title {
     font-size: 45px;
     line-height: 1.1;
-    letter-spacing: 5.5;
     text-align: center;
     font-weight: 500;
     padding: 40px;
@@ -124,11 +122,11 @@ td {
 }
 
 .insurance {
-    background-color: rgba(234, 68, 53, 0.832);
+    background-color: rgb(234, 67, 53);
 }
 
 .arrival {
-    background-color: rgba(255, 166, 0, 0.816);
+    background-color: rgb(255, 166, 0);
 }
 
 .visa {
@@ -140,11 +138,11 @@ td {
 }
 
 .test {
-    background-color: rgba(153, 153, 229, 0.714);
+    background-color: rgb(0, 191, 255);
 }
 
 .certificate {
-    background-color: rgba(0, 0, 254, 0.401);
+    background-color: rgb(105, 105, 239);
 }
 
 .development {
@@ -192,12 +190,20 @@ td {
         display: none;
     }
 
+    .header__link {
+        font-size: 16px;
+    }
+
     .content__title {
         font-size: 20px;
     }
 
     .service-container {
-        margin: 20px;
-        width: 85vw;
+        max-width: 300px;
+    }
+
+    .development {
+        right: 120px;
+        top: -20px;
     }
 }

@@ -24,10 +24,27 @@
     <main class="content__wrapper">
         <h2 class="content__title">База знаний</h2>
         <div class="about">
-            <img src="../../assets/img/about.png" class="content__image">
-            <p>Здесь будет основная информация про документы иностранных студентов</p>
-
-                <button class="form__button" onclick="document.location='../../index.html'">Назад</button>
+            <div class="content__block_left">
+                <div class="content__main">
+                    <img class="content__block_image" src="../../assets/img/passport.png" alt="passport-image" />
+                    <h3 class="content__name">Паспорт</h3>
+                </div>
+                <div class="content__description">
+                    <p class="description"></p>
+                    <button class="content__button" type="button">Полное описание</button>
+                </div>
+            </div>
+            <div class="content__block_right">
+                <div class="content__description">
+                    <p class="description"></p>
+                    <button class="content__button" type="button">Полное описание</button>
+                </div>
+                <div class="content__main">
+                    <img class="content__block_image" src="../../assets/img/visaForDocuments.png" alt="visa-image" />
+                    <h3 class="content__name">Учебная виза</h3>
+                </div>
+            </div>
+            <button class="form__button" onclick="document.location='../../index.html'">Назад</button>
         </div>
     </main>
     <footer class="footer">
@@ -37,5 +54,6 @@
              <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
         </div>
     </footer>
+    <script src="./documents.js"></script>
 </body>
 </html>

@@ -4,6 +4,13 @@
     box-sizing: border-box;
     outline: none;
     border: none;
+
+    --arrival-color: rgb(255, 166, 0);
+    --certificate-color: rgb(105, 105, 239);
+    --departure-color: rgb(0, 128, 0);
+    --insurance-color: rgb(234, 67, 53);
+    --test-color: rgb(0, 191, 255);
+    --visa-color: #fde293;
 }
 
 a {
@@ -19,7 +26,7 @@ body {
 }
 
 .header {
-    background-color: #fde293;
+    background-color: var(--visa-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +52,8 @@ body {
 }
 
 .content__wrapper {
-    padding: 40px;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .content__title {
@@ -56,38 +64,51 @@ body {
     padding: 10px;
 }
 
-.about {
+.form, .test, .arrival, .certificate, .departure, .insurance, .contacts, .news {
+    padding: 10px;
     color: white;
     display: flex;
     flex-direction: column;
     font-weight: 300;
     align-items: center;
-    margin: 0 auto;
-    background-color: #fde293;
+    background-color: var(--visa-color);
     border-radius: 25px;
+    margin: 0 auto;
 }
 
-.news {
-    padding-top: 40px;
-    width: 100%;
+.test {
+    background-color: var(--test-color);
 }
 
-.description {
-    margin-bottom: 20px;
+.arrival {
+    background-color: var(--arrival-color);
+}
+
+.departure {
+    background-color: var(--departure-color);
+}
+
+.certificate {
+    background-color: var(--certificate-color);
+}
+
+.insurance {
+    background-color: var(--insurance-color);
 }
 
 .form__button {
     margin: 20px;
     padding: 15px;
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 15px;
-    width: 90%;
+    color: black;
+    background-color: white;
 }
 
 .form__button:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     transition: all 0.3s ease-in;
-    background-color: #fde293;
+    background-color: var(--visa-color);
     color: white;
 }
 
@@ -95,6 +116,17 @@ body {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     color: black;
     transition: all 0.3s ease-in;
+}
+
+.service__link:hover {
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+.inner-container {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
 }
 
 .inner-container__title {
@@ -106,8 +138,14 @@ body {
     padding: 20px;
 }
 
+.description {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
 .footer {
-    background-color: #fde293;
+    background-color: var(--visa-color);
     padding: 20px;
     text-align: center;
 }
@@ -126,12 +164,15 @@ body {
         display: none;
     }
 
+    .content__wrapper {
+        padding: 5px;
+    }
+
     .content__title {
         font-size: 20px;
     }
 
-    .service-container {
-        margin: 10px;
-        width: 85vw;
+    .iframe {
+        width: 100%;
     }
 }
