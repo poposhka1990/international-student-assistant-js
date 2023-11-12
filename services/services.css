@@ -136,6 +136,7 @@ body {
 .content__image {
     width: 100px;
     padding: 20px;
+    justify-content: right;
 }
 
 .description {
