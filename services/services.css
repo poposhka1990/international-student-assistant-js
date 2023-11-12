@@ -146,6 +146,7 @@ body {
 }
 
 .footer {
+    margin-top: 20px;
     background-color: var(--visa-color);
     padding: 20px;
     text-align: center;
