@@ -216,15 +216,20 @@ td {
 }
 
 @media screen and (max-width: 960px) {
-    .header__image {
-        display: none;
+
+    .header {
+        flex-direction: column;
     }
-    .header__logo {
+    .header__image {
         display: none;
     }
 
     .header__link {
         font-size: 16px;
+    }
+
+    .header__title {
+        font-size: 12px;
     }
 
     .content__title {

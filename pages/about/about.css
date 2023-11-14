@@ -161,11 +161,15 @@ td {
 }
 
 @media screen and (max-width: 960px) {
+    .header {
+        flex-direction: column;
+    }
     .header__image {
         display: none;
     }
-    .header__logo {
-        display: none;
+
+    .header__title {
+        font-size: 12px;
     }
 
     .header__link {

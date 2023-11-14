@@ -223,16 +223,24 @@ td {
 
     @media screen and (max-width: 430px) {
 
+        .header {
+            flex-direction: column;
+        }
+
         .header__link {
             font-size: 16px;
+        }
+
+        .header__links {
+            flex-direction: column;
         }
 
         .header__image {
             display: none;
         }
 
-        .header__logo {
-            display: none;
+        .header__title {
+            font-size: 12px;
         }
 
         .content__title {
