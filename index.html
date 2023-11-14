@@ -14,10 +14,13 @@
     <title>Помощник иностранного студента</title>
 </head>
 <body>
-    <header class="header">
-        <img src="./assets/img/ISA-logo.jpg" class="header__logo">
-        <table class="header__links">
-            <thead>
+    <main class="content">
+        <header class="header">
+            <a class="home-link" href="./index.html">
+            <img src="./assets/img/ISA-logo.jpg" class="header__logo" alt="logo">
+            </a>
+            <table class="header__links">
+                <thead>
                 <tr>
                     <th colspan="4"class="link-ease-in-out">
                         <a class="header__title" href="./index.html">
@@ -25,8 +28,8 @@
                         </a>
                     </th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <td class="link-ease-in-out">
                         <a class="header__link" href="./pages/documents/documents.html">
@@ -48,13 +51,12 @@
                             <p>Контакты</p>
                         </a>
                     </td>
-                </tr>        
-            </tbody>
-        </table>     
-            
-        <img src="./assets/favicon_io/android-chrome-192x192.png" class="header__image">
-    </header>
-    <main class="content__wrapper">
+                </tr>
+                </tbody>
+            </table>
+            <img src="./assets/favicon_io/android-chrome-192x192.png" class="header__image" alt="header-image">
+        </header>
+        <div class="content-wrapper">
         <h2 class="content__title">Сервисы для иностранных студентов ПетрГУ</h2>
         <div class="containers">
             <div class="service-container test">
@@ -113,13 +115,16 @@
                 </a>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <p class="footer__disclaimer">* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
-        <div class="footer__links link-ease-in-out">
-            <a href="mailto:rvo.petrsu@yandex.ru">По всем предложениям и вопросам пишите сюда</a>
-             <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
         </div>
-    </footer>
+        <footer class="footer">
+            <div class="footer-wrapper">
+            <p class="footer__disclaimer">* Данный сайт предназначен для использования ИСКЛЮЧИТЕЛЬНО иностранными студентами ПетрГУ. Основан на нормах миграционного законодательства РФ, актуальных на 2023 год, и правоприменительной практике в Республике Карелия.</p>
+            <div class="footer__links link-ease-in-out">
+                <a href="mailto:rvo.petrsu@yandex.ru">По всем предложениям и вопросам пишите сюда</a>
+                <p>Регистрационно-визовый отдел ПетрГУ 2023 ©</p>
+            </div>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
