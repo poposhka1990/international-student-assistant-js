@@ -4,6 +4,7 @@
     box-sizing: content-box;
 
     --main-color: darkblue;
+    --second-option-color: #5B8FB9;
 }
 a {
     color: white;
@@ -185,6 +186,24 @@ td {
     font-size: 20px;
     line-height: 28px;
 }
+
+.project-description__wrapper {
+    background-color: var(--second-option-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px 100px 40px;
+}
+
+.iframe {
+    padding: 40px;
+}
+
+.project-description__paragraph {
+    padding: 0 40px;
+    font-size: 20px;
+}
+
 
 .footer {
     background-color: var(--main-color);
