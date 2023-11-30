@@ -54,7 +54,6 @@ body {
 }
 
 .header__title:hover  {
-    color: black;
     transition: all 0.3s ease-in;
 }
 
@@ -63,7 +62,7 @@ body {
     cursor: pointer;
 }
 .link-ease-in-out a:after {
-    background-color: black; /* Цвет линии при наведении на нее курсора мыши */
+    background-color: white; /* Цвет линии при наведении на нее курсора мыши */
     display: block;
     content: "";
     height: 2px; /* Высота линии */
@@ -88,7 +87,6 @@ body {
 }
 
 .header__link:hover {
-    color: black;
     transition: all 0.3s ease-in;
 }
 
