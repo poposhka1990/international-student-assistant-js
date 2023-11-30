@@ -42,9 +42,12 @@ body {
     height: 120px;
 }
 
-.home-link:hover {
+@media (hover: hover) {
+
+    .home-link:hover {
     transition: all 0.3s ease-in;
     transform: scale(1.1);
+    }
 }
 
 .header__title {
@@ -53,8 +56,11 @@ body {
     margin-bottom: 40px;
 }
 
-.header__title:hover  {
+@media (hover: hover) {
+    
+    .header__title:hover  {
     transition: all 0.3s ease-in;
+    }
 }
 
 .link-ease-in-out a {
@@ -70,9 +76,12 @@ body {
     -webkit-transition: width .4s ease-in-out;
     transition: width .4s ease-in-out;
 }
-.link-ease-in-out a:hover:after,
-.link-ease-in-out a:focus:after {
-    width: 100%;
+
+@media (hover: hover) {
+
+    .link-ease-in-out a:hover:after, .link-ease-in-out a:focus:after {
+        width: 100%;
+    }
 }
 
 .header__logo {
@@ -86,8 +95,11 @@ body {
     text-align: center;
 }
 
-.header__link:hover {
+@media (hover: hover) {
+
+    .header__link:hover {
     transition: all 0.3s ease-in;
+    }
 }
 
 td {
@@ -129,16 +141,22 @@ td {
     align-items: center;
 }
 
-.service-container:hover {
+@media (hover: hover) {
+    
+    .service-container:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     color: black;
     transition: all 0.3s ease-in;
     transform: scale(1.1);
+    }
 }
 
-.service__link:hover {
+@media (hover: hover) {
+    
+    .service__link:hover {
     color: black;
     transition: all 0.3s ease-in;
+    }
 }
 
 .insurance {
@@ -267,7 +285,16 @@ td {
         }
 
         td {
-            padding-right: 10px;
+            padding-left: 35px;
+        }
+
+        .link-ease-in-out {
+            padding: 0 30px;
+        }
+
+        tbody {
+            display: flex;
+            flex-direction: row;
         }
 
         .header__title {
