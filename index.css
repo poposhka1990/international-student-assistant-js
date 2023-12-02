@@ -4,6 +4,7 @@
     box-sizing: content-box;
 
     --main-color: darkblue;
+    --second-option-color: #5B8FB9;
 }
 a {
     color: white;
@@ -24,6 +25,12 @@ body {
 
 .header {
     background-color: var(--main-color);
+
+}
+
+.header__wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,9 +42,12 @@ body {
     height: 120px;
 }
 
-.home-link:hover {
+@media (hover: hover) {
+
+    .home-link:hover {
     transition: all 0.3s ease-in;
     transform: scale(1.1);
+    }
 }
 
 .header__title {
@@ -46,9 +56,11 @@ body {
     margin-bottom: 40px;
 }
 
-.header__title:hover  {
-    color: black;
+@media (hover: hover) {
+    
+    .header__title:hover  {
     transition: all 0.3s ease-in;
+    }
 }
 
 .link-ease-in-out a {
@@ -56,7 +68,7 @@ body {
     cursor: pointer;
 }
 .link-ease-in-out a:after {
-    background-color: black; /* Цвет линии при наведении на нее курсора мыши */
+    background-color: white; /* Цвет линии при наведении на нее курсора мыши */
     display: block;
     content: "";
     height: 2px; /* Высота линии */
@@ -64,25 +76,30 @@ body {
     -webkit-transition: width .4s ease-in-out;
     transition: width .4s ease-in-out;
 }
-.link-ease-in-out a:hover:after,
-.link-ease-in-out a:focus:after {
-    width: 100%;
+
+@media (hover: hover) {
+
+    .link-ease-in-out a:hover:after, .link-ease-in-out a:focus:after {
+        width: 100%;
+    }
 }
 
 .header__logo {
     width: 120px;
     height: 120px;
     border: 4px solid white;
-    border-radius: 20px;
+    border-radius: 100%;
 }
 
 .header__links {
     text-align: center;
 }
 
-.header__link:hover {
-    color: black;
+@media (hover: hover) {
+
+    .header__link:hover {
     transition: all 0.3s ease-in;
+    }
 }
 
 td {
@@ -124,16 +141,22 @@ td {
     align-items: center;
 }
 
-.service-container:hover {
+@media (hover: hover) {
+    
+    .service-container:hover {
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.261);
     color: black;
     transition: all 0.3s ease-in;
     transform: scale(1.1);
+    }
 }
 
-.service__link:hover {
+@media (hover: hover) {
+    
+    .service__link:hover {
     color: black;
     transition: all 0.3s ease-in;
+    }
 }
 
 .insurance {
@@ -144,7 +167,7 @@ td {
     background-color: rgb(255, 166, 0);
 }
 
-.visa {
+.medical-pass {
     background-color: #fde293;
 }
 
@@ -186,6 +209,24 @@ td {
     line-height: 28px;
 }
 
+.project-description__wrapper {
+    background-color: var(--second-option-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px 100px 40px;
+}
+
+.iframe {
+    padding: 40px;
+}
+
+.project-description__paragraph {
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+
 .footer {
     background-color: var(--main-color);
     padding: 20px;
@@ -223,7 +264,7 @@ td {
 
     @media screen and (max-width: 430px) {
 
-        .header {
+        .header__wrapper {
             flex-direction: column;
         }
 
@@ -237,6 +278,23 @@ td {
 
         .header__image {
             display: none;
+        }
+
+        thead {
+            display: none;
+        }
+
+        td {
+            padding-left: 35px;
+        }
+
+        .link-ease-in-out {
+            padding: 0 30px;
+        }
+
+        tbody {
+            display: flex;
+            flex-direction: row;
         }
 
         .header__title {
