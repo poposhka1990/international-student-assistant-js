@@ -20,49 +20,48 @@
             <a class="home-link" href="./index.html">
                 <img src="./assets/logo.png" class="header__logo" alt="logo">
             </a>
-            <div class="header__navbar link-ease-in-out">
-                <a id="home" class="header__title" href="./index.html">
-                    <h1>Помощник иностранного студента</h1>
-                </a>
-                <div class="navbar__links">
-                    <a class="header__link" href="./index.html">
-                        <p>Сервисы</p>
-                    </a>
-                    <a class="header__link" href="#">
-                        <p>Документы</p>
-                    </a>
-                    <a class="header__link" href="./contacts.html">
-                        <p>Контакты</p>
-                    </a>
-                </div>
-            </div>
-            <a class="header__documents" href="./check-list.html">
-                ПАМЯТКА СТУДЕНТА
-            </a>
-            <div class="mobile-menu">
-                <div class="circle">
-                    <input class="menu__burger-checkbox" aria-label="burger-checkbox" type="checkbox">
-                    <div class="mobile-menu__first-line"></div>
-                    <div class="mobile-menu__second-line"></div>
-                </div>
-            </div>
-    </div>
-    </header>
-    <main class="content__wrapper">
-
-        <section class="services">
-            <h2 class="content__title" id="services">Сервисы для иностранных студентов ПетрГУ</h2>
-            <div class="containers">
-                <a class='service__link' href='./index.html#arrival'>
-                    <div class="service-container arrival appearance__first">
-                        <div class="inner-container">
-                            <h3 class="inner-container__title">Я приехал(а)!</h3>
-                            <svg class="inner-container__image" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            <p class="inner-container__text">Сообщи о возвращении в Россию на учебу</p>
-                        </div>
+            <table class="header__links">
+                <thead>
+                <tr>
+                    <th colspan="4"class="link-ease-in-out">
+                        <a class="header__title" href="./index.html">
+                            <h1>Помощник иностранного студента</h1>
+                        </a>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="link-ease-in-out">
+                        <a class="header__link" href="./pages/news/news.html">
+                            <p>Новости</p>
+                        </a>
+                    </td>
+                    <td class="link-ease-in-out">
+                        <a class="header__link" href="./pages/about/about.html">
+                            <p>О проекте</p>
+                        </a>
+                    </td>
+                    <td class="link-ease-in-out">
+                        <a class="header__link" href="./pages/contacts/contacts.html">
+                            <p>Контакты</p>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <img src="./assets/favicon_io/android-chrome-192x192.png" class="header__image" alt="header-image">
+        </div>
+        </header>
+        <div class="content-wrapper">
+        <h2 class="content__title">Сервисы для иностранных студентов ПетрГУ</h2>
+        <div class="containers">
+            <div class="service-container arrival">
+                <a href="./services/arrival/arrival.html" class="service__link">
+                    <div class="inner-container">
+                        <h3 class="inner-container__title">Я приехал!</h3>
+                        <img src="./assets/img/arrival.png" class="inner-container__image">
+                        <p class="inner-container__text">Сообщи о своем возвращении в Россию на учёбу вовремя</p>
                     </div>
                 </a>
                 <a class='service__link' href='./index.html#insurance'>
