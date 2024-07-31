@@ -1070,13 +1070,8 @@ a {
         margin-top: 15px;
     }
 
-    .inner-container__image path {
-        stroke: black;
-    }
-
     .inner-container__title {
         font-size: 1rem;
-        color: black;
     }
 
     .inner-container__text {
