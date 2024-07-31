@@ -516,6 +516,10 @@ a {
     line-height: 28px;
 }
 
+.justified-text {
+    text-align: justify;
+}
+
 .project-description__wrapper {
     background-color: var(--second-option-color);
     display: flex;
