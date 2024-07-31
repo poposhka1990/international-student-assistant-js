@@ -25,6 +25,7 @@ html {
 
 body {
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 a {
@@ -791,7 +792,6 @@ a {
     background: var(--highlight);
     font-weight: 80;
     top: 0;
-    left: 100%;
     translate: 50% 0;
     font-size: 0.875rem;
     scale: var(--highlighted);
@@ -1062,6 +1062,10 @@ a {
         padding: 10px;
     }
 
+    .services__full {
+        margin-top: 15px;
+    }
+
     .inner-container__image path {
         stroke: black;
     }
@@ -1073,8 +1077,7 @@ a {
 
     .inner-container__text {
         line-height: normal;
-        font-size: 12px;
-        color: black;
+        font-size: 15px;
     }
 
     .documents__short {
