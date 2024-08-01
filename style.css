@@ -1048,6 +1048,8 @@ a {
     }
 
     .documents__short-item-img {
+        width: 100px;
+        height: 100px;
         fill: black;
     }
 
