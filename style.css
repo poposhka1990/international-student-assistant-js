@@ -61,7 +61,7 @@ a {
 @media (hover: hover) {
     .header__title:hover, .header__link:hover {
         background-color: var(--main-color);
-        border-radius: 20px;
+        border-radius: 30px;
         color: var(--white-color);
     }
 }
@@ -193,7 +193,7 @@ a {
 		text-wrap: balance;
 		font-weight: 120;
         background-color: var(--white-color);
-        border-radius: 50px;
+        border-radius: 30px;
 	}
 
 	.h1 .span:first-of-type {
@@ -204,7 +204,7 @@ a {
 		content: "";
 		pointer-events: none;
 		z-index: -1;
-        border-radius: 50px;
+        border-radius: 30px;
 	}
 
 	.main {
@@ -324,7 +324,7 @@ a {
 }
 
 .h1-highlight {
-    border-radius: 25px;
+    border-radius: 30px;
     color: var(--white-color);
     padding: 10px;
     background-color: var(--main-color);
@@ -342,7 +342,7 @@ a {
 }
 
 .h3-highlight {
-    border-radius: 25px;
+    border-radius: 30px;
     color: var(--main-color);
     padding: 10px;
     background-color: var(--white-color);
@@ -364,7 +364,7 @@ a {
 }
 
 .containers {
-    justify-content: center;
+    justify-content: space-evenly;
     font-weight: 300;
     display: flex;
     flex-direction: row;
@@ -378,7 +378,7 @@ a {
 .service-container {
     height: 240px;
     width: 240px;
-    border-radius: 25px;
+    border-radius: 30px;
     margin: 25px;
     padding: 20px;
     position: relative;
@@ -535,7 +535,7 @@ a {
 
 .services {
     border: 4px solid var(--main-color);
-    border-radius: 50px;
+    border-radius: 30px;
     padding-top: 20px;
     background-color: var(--white-color);
     margin: 0 auto;
@@ -548,7 +548,7 @@ a {
 .services__form {
     background-color: var(--white-color);
     border: 4px solid var(--main-color);
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 20px;
     margin-bottom: 40px;
 }
@@ -580,7 +580,7 @@ a {
 .social__block {
     border: 2px solid var(--main-color);
     background-color: var(--white-color);
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px;
     display: flex;
     width: 300px;
@@ -616,14 +616,14 @@ a {
 
 .iframe {
     margin-top: 50px;
-    border-radius: 25px;
+    border-radius: 30px;
     height: 800px;
     border: 1px solid var(--main-color);
 }
 
 .iframe_youtube {
     margin-top: 50px;
-    border-radius: 25px;
+    border-radius: 30px;
     max-width: 2000px;
     max-height: 2000px;
 }
@@ -650,13 +650,13 @@ a {
 .footer__social {
     border: 2px solid var(--main-color);
     background-color: var(--main-color);
-    border-radius: 20px;
+    border-radius: 30px;
     width: 70px;
     margin: 0 auto;
 }
 
 .social__image {
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .map__title {
@@ -682,7 +682,7 @@ a {
     padding: 10px;
     background-color: var(--main-color);
     max-width: 1200px;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .documents__title {
@@ -699,8 +699,8 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 20px;
+    justify-content: space-evenly;
+    border-radius: 30px;
 }
 
 .documents__short-item-link {
@@ -734,7 +734,7 @@ a {
     flex-direction: column;
     width: 240px;
     height: 240px;
-    border-radius: 20px;
+    border-radius: 30px;
     align-items: center;
     justify-content: space-evenly;
     color: var(--white-color);
@@ -759,74 +759,13 @@ a {
 /* HIGHLIGHTING TEXT */
 
 .mark {
-	color: hsl(0 0% 6%);
-}
-
-.mark {
-    --lightness: 80%;
-    --highlighted: 1;
-    background: transparent;
-}
-
-@supports (animation-timeline: view()) {
-  .mark {
-    --highlighted: 0;
-    animation: highlight steps(1) both;
-    animation-timeline: view();
-    animation-range: entry 100% cover 10%;
-  }
-}
-
-.mark span {
-  background: linear-gradient(120deg, var(--highlight, lightblue) 50%, transparent 50%) 110% 0 / 200% 100% no-repeat;
-  background-position: calc((1 - var(--highlighted)) * 110%) 0;
-  transition: background-position 1s;
-}
-
-.mark::after {
-    content: attr(data-author);
-    display: grid;
-    place-items: center;
-    font-variant-numeric: tabular-nums;
+    background: lightblue;
     font-weight: bold;
-    position: absolute;
-    width: 32px;
-    aspect-ratio: 1;
-    border-radius: 12px;
-    background: var(--highlight);
-    font-weight: 80;
-    top: 0;
-    translate: 50% 0;
-    font-size: 0.875rem;
-    scale: var(--highlighted);
-    transition: scale 0.2s;
-}
-  
-@keyframes highlight {
-    to {
-      --highlighted: 1;
-    }
-}
-  
-::view-transition-new(root) {
-      animation: grow 1s;
-}
-::view-transition-old(root) {
-      animation: none;
-}
-  
-@keyframes grow {
-      0% {
-          clip-path: polygon(50vmax 50vmax, 50vmax 50vmax, 50vmax 50vmax);
-      }
-      100% {
-          clip-path: polygon(50vmax -100vmax, -100vmax 200vmax, 200vmax 200vmax);
-      }
 }
 
 .documents__item_blue {
     background-color: var(--main-color);
-    border-radius: 20px;
+    border-radius: 30px;
     color: var(--white-color);
     padding: 20px;
     line-height: 1.5;
@@ -836,7 +775,7 @@ a {
 .documents__item_white {
     background-color: var(--white-color);
     border: 4px solid var(--main-color);
-    border-radius: 20px;
+    border-radius: 30px;
     color: var(--main-color);
     padding: 20px;
     line-height: 1.5;
@@ -863,14 +802,14 @@ a {
     float: left;
     height: 400px;
     margin: 0 15px 0 0;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .documents__image_white {
     float: right;
     height: 400px;
     margin: 0 15px 0 0;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .documents__checklist {
@@ -879,7 +818,7 @@ a {
 
 .documents__link {
     background-color: var(--main-color);
-    border-radius: 20px;
+    border-radius: 30px;
     color: var(--white-color);
     padding: 5px;
 }
@@ -889,7 +828,7 @@ a {
 
 .question {
     border: 2px solid var(--main-color);
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px;
     width: fit-content;
     margin: 10px auto;
@@ -1071,7 +1010,7 @@ a {
     }
 
     .services__form {
-        padding: 10px;
+        padding: 5px;
     }
 
     .inner-container__title {
