@@ -735,7 +735,7 @@ a {
     height: 240px;
     border-radius: 30px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: var(--white-color);
 }
 
