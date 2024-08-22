@@ -760,6 +760,8 @@ a {
 .mark {
     background: lightblue;
     font-weight: bold;
+    padding: 5px;
+    border-radius: 30px;
 }
 
 .documents__item_blue {
@@ -802,12 +804,12 @@ a {
     height: 400px;
     margin: 0 15px 0 0;
     border-radius: 30px;
+    padding-bottom: 10px;
 }
 
 .documents__image_white {
     float: right;
     height: 400px;
-    margin: 0 15px 0 0;
     border-radius: 30px;
 }
 
