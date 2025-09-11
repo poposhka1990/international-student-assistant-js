@@ -151,25 +151,11 @@ const Home = () => {
                   : 'From September 1, 2025, temporary registration in Russia has become a paid service‼️'
                 }
               </p>
-              
+          
               <p>
                 {language === 'ru'
-                  ? 'Стоимость госпошлины за оформление миграционного учета - 500 рублей для граждан из визовых стран, студентов с РВП, РВПО и ВНЖ.'
-                  : 'The state fee for migration registration is 500 rubles for citizens from visa countries, students with permanent residence documents(RVP, RVPO, VNZh).'
-                }
-              </p>
-              
-              <p>
-                {language === 'ru'
-                  ? 'Стоимость временной регистрации для граждан из безвизовых стран - 1500 рублей. Сюда входят граждане Абхазии, Азербайджана, Армении, Беларуси, Казахстана, Киргизии, Молдовы, Таджикистана, Узбекистана.'
-                  : 'The cost of temporary registration for citizens from visa-free countries is 1500 rubles. This includes citizens of Abkhazia, Azerbaijan, Armenia, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Tajikistan, Uzbekistan.'
-                }
-              </p>
-              
-              <p>
-                {language === 'ru'
-                  ? 'Оплата будет производиться лично в банке или через банковское приложение. Реквизиты уточняйте в международном отделе.'
-                  : 'Payment will be made personally at the bank or through a banking application. Please check the details with the international department.'
+                  ? 'Оплата будет производиться вами лично в банке или через банковское приложение. Реквизиты для банка и стоимость уточняйте в международном отделе.'
+                  : 'Payment will be made personally at the bank or through a banking application. Please check the details for a bank and the price with the international department.'
                 }
               </p>
             </div>
