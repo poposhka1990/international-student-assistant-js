@@ -206,7 +206,7 @@ const Home = () => {
         >
           <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white flex items-center">
             <Calendar className="w-6 h-6 mr-2" />
-            {language === 'ru' ? 'Калькулятор визы' : 'Visa Calculator'}
+            {language === 'ru' ? 'Визовый калькулятор' : 'Visa Calculator'}
           </h2>
           
           <p className="text-lg dark:text-gray-300 text-gray-600 max-w-2xl">
