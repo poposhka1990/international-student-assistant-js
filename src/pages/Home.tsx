@@ -141,16 +141,13 @@ const Home = () => {
           
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
             <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
-              {language === 'ru' ? 'Уважаемые иностранные студенты!' : 'Dear International Students!'}
-            </h3>
-            
-            <div className="space-y-4 text-gray-700 dark:text-gray-300">
-              <p className="font-medium">
-                {language === 'ru' 
+              {language === 'ru' 
                   ? 'С 1 сентября 2025 года оформление временной регистрации в России стало платной услугой‼️'
                   : 'From September 1, 2025, temporary registration in Russia has become a paid service‼️'
                 }
-              </p>
+            </h3>
+            
+            <div className="space-y-4 text-gray-700 dark:text-gray-300">
           
               <p>
                 {language === 'ru'
