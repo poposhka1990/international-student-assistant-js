@@ -30,8 +30,8 @@ const documents = [
     icon: FileText,
     color: 'purple',
     description: { 
-      ru: 'Документ учета въезда',
-      en: 'Entry registration document'
+      ru: 'Документ учета въезда в Россию',
+      en: 'Russia entry first document'
     }
   },
   {
@@ -40,8 +40,8 @@ const documents = [
     icon: Home,
     color: 'orange',
     description: { 
-      ru: 'Документ о месте проживания',
-      en: 'Residence document'
+      ru: 'Временная регистрация в России',
+      en: 'Temporary registration in Russia'
     }
   },
   {

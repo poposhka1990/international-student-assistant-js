@@ -7,14 +7,14 @@ import AnimatedCard from '../components/AnimatedCard';
 const services = [
   {
     id: 'arrival',
-    title: { ru: 'Я приехал(а)!', en: 'I arrived!' },
+    title: { ru: 'Я приехал(а)!', en: 'I am back!' },
     description: { 
       ru: 'Сообщи о возвращении в Россию на учебу',
       en: 'Report your return to Russia for studies'
     },
     fullDescription: {
-      ru: 'Сообщи о своем прибытии в Россию для постановки на миграционный учёт. Для своевременной регистрации документы необходимо присылать в течение 2 дней с момента въезда в Россию. Дата въезда указана на вашей миграционной карте.',
-      en: 'Report your arrival in Russia for migration registration. For timely registration, documents must be submitted within 2 days of entering Russia. The entry date is indicated on your migration card.'
+      ru: 'Сообщи о своем прибытии в Россию для постановки на миграционный учёт. Для своевременной регистрации документы (включая оплату госпошлины) необходимо присылать в течение 3 дней с момента въезда в Россию. Дата въезда указана на вашей миграционной карте.',
+      en: 'Report your arrival in Russia for migration registration. For timely registration, documents (including state fee receipt) must be submitted within 3 days of entering Russia. The entry date is indicated on your migration card.'
     },
     icon: MapPin,
     formUrl: 'https://forms.yandex.ru/cloud/654c8c0ceb614603ad7613e9/',
@@ -58,8 +58,8 @@ const services = [
       en: 'Submit a request for dormitory accommodation'
     },
     fullDescription: {
-      ru: 'Отправь заявку на регистрацию после заселения в общежитие. После заселения необходимо обязательно сообщить новый номер комнаты. Через 3-5 рабочих дней вы должны забрать новую регистрацию.',
-      en: 'Submit a registration request after moving into the dormitory. After moving in, you must report your new room number. You should receive your new registration within 3-5 working days.'
+      ru: 'Отправь заявку на регистрацию после заселения в общежитие. Внимание! С сентября 2025 года перед заселением в общежитие или смены комнаты в общежитии оплачивается госпошлина.  После заселения необходимо обязательно сообщить новый номер комнаты. Через 3-5 рабочих дней вы должны забрать новую регистрацию.',
+      en: 'Submit a registration request after moving into the dormitory. Attention! Before accommodation or getting a new room in a dormatory you have to pay a state fee. After moving in, you must report your new room number. You should receive your new registration within 3-5 working days.',
     },
     icon: Building2,
     formUrl: 'https://forms.yandex.ru/cloud/664c5b485d2a06e2607c0443/',
@@ -112,14 +112,14 @@ const services = [
   },
   {
     id: 'departure',
-    title: { ru: 'Еду домой', en: 'Going Home' },
+    title: { ru: 'Еду домой', en: 'Going Home'},
     description: { 
-      ru: 'Проинформируй о своем отъезде домой',
-      en: 'Inform about your departure home'
+      ru: 'Проинформируй о своем отъезд',
+      en: 'Inform about your departure'
     },
     fullDescription: {
-      ru: 'Проинформируй о своем отъезде домой. Это важно для правильного учета вашего миграционного статуса и соблюдения требований российского законодательства.',
-      en: 'Inform about your departure home. This is important for proper accounting of your migration status and compliance with Russian legislation requirements.'
+      ru: 'Проинформируй о своем отъезде из России. Это важно для правильного учета вашего миграционного статуса и соблюдения требований российского законодательства.',
+      en: 'Inform about your departure from Russia. This is important for proper accounting of your migration status and compliance with Russian legislation requirements.'
     },
     icon: LogOut,
     formUrl: 'https://forms.yandex.ru/cloud/654c8d7773cee703f92afc45/',
