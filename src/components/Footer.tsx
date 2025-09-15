@@ -24,6 +24,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/visa" className="hover:text-white transition-colors">
+                  {t('footer.visa')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/documents" className="hover:text-white transition-colors">
                   {t('footer.documents')}
                 </Link>
