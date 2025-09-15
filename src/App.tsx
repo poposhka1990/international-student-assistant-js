@@ -8,6 +8,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
 import Home from './pages/Home';
 import Services from './pages/Services';
+import VisaCalculator from './pages/Visa Calculator';
 import Documents from './pages/Documents';
 import StudentGuide from './pages/StudentGuide';
 import FAQ from './pages/FAQ';
@@ -24,6 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/visa" element={<VisaCalculator />} />
                 <Route path="/documents" element={<Documents />} />
                 <Route path="/student-guide" element={<StudentGuide />} />
                 <Route path="/faq" element={<FAQ />} />

@@ -43,7 +43,7 @@ const Header = () => {
 
           <div className="flex items-center space-x-4">
             <Link
-              to="/#visa-calculator"
+              to="/visa"
               className="p-2 rounded-lg dark:text-gray-300 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               title={t('home.visa')}
             >

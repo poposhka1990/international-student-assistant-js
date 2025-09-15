@@ -32,6 +32,10 @@ const translations = {
     'home.vk': 'VK Группа',
     'home.telegram': 'Telegram Канал',
 
+    // Visa Calculator Page
+    'visa.title': 'Визовый калькулятор',
+    'visa.subtitle': 'Помогает узнать дату подачи документов на продление визы и необходимость замены паспорта',
+
     // Documents Page
     'documents.title': 'Основные миграционные документы',
     
@@ -81,6 +85,10 @@ const translations = {
     'home.social': 'Join Us on Social Media',
     'home.vk': 'VK Community',
     'home.telegram': 'Telegram Channel',
+
+    // Visa Calculator Page
+    'visa.title': 'Visa Calculator',
+    'visa.subtitle': 'Helps to calculate the deadline for study visa applying and the neccesity to change your passport',
 
     // Documents Page
     'documents.title': 'Essential Migration Documents',
