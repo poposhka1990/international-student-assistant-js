@@ -2,6 +2,7 @@ import React from 'react';
 import { Fingerprint, FileText, CreditCard, Home, Shield, UserCheck, UserPlus } from 'lucide-react';
 import AnimatedCard from '../components/AnimatedCard';
 import { useLanguage } from '../context/LanguageContext';
+import registrationImage from '../img/registration.jpg';
 
 const documents = [
   {
@@ -174,6 +175,13 @@ const Documents = () => {
           <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
             {language === 'ru' ? 'Временная регистрация 📝' : 'Temporary Registration 📝'}
           </h2>
+
+          <img
+              src={registrationImage}
+              alt="..."
+              className="w-full h-auto rounded-lg mb-6 object-cover
+                  md:w-1/4 md:float-right md:ml-6"
+          />
 
           <p className="text-gray-700 dark:text-gray-300 mb-6">
             {language === 'ru'
