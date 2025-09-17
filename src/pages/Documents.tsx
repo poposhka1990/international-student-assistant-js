@@ -170,7 +170,79 @@ const Documents = () => {
           </p>
         </section>
 
-        {documents.slice(1).map((doc) => (
+        <section id="registration" className="bg-white dark:bg-gray-800 rounded-xl p-6 md:p-8 shadow-lg">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+            {language === 'ru' ? 'Временная регистрация 📝' : 'Temporary Registration 📝'}
+          </h2>
+
+          <p className="text-gray-700 dark:text-gray-300 mb-6">
+            {language === 'ru'
+              ? 'Если вы приехали учиться в Россию, важно оформить временную регистрацию (миграционный учет по месту пребывания). Это обязательный документ, который подтверждает ваш адрес в России.'
+              : 'If you come to study in Russia, it is important to obtain temporary registration (migration registration at the place of stay). This is a mandatory document confirming your address in Russia.'}
+          </p>
+
+          <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            {language === 'ru' ? '📌 Сроки' : '📌 Deadlines'}
+          </h3>
+
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mb-6">
+            <li>
+              {language === 'ru'
+                ? 'Иностранные студенты (вне зависимости от курса), проживающие в общежитии, должны предоставить документы в течение 3 рабочих дней после приезда в Петрозаводск.'
+                : 'Foreign students (regardless of year of study) living in dormitories must submit documents within 3 working days after arrival in Petrozavodsk.'}
+            </li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            {language === 'ru' ? '📍 Где оформить' : '📍 Where to Apply'}
+          </h3>
+
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mb-6">
+            <li>
+              {language === 'ru'
+                ? 'Если вы проживаете в общежитии, то регистрацию оформляет университет.'
+                : 'If you live in a dormitory, the university arranges your registration.'}
+            </li>
+            <li>
+              {language === 'ru'
+                ? 'Если вы живёте в квартире у частного лица, регистрацией занимается ваш арендодатель.'
+                : 'If you live in a private apartment, your landlord is responsible for your registration.'}
+            </li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            {language === 'ru' ? '📄 Необходимые документы' : '📄 Required Documents'}
+          </h3>
+
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mb-6">
+            <li>{language === 'ru' ? 'Паспорт с визой (или документ, подтверждающий безвизовый въезд).' : 'Passport with visa (or document confirming visa-free entry).'}</li>
+            <li>{language === 'ru' ? 'Миграционная карта (выдают при въезде в Россию).' : 'Migration card (issued upon entry into Russia).'}</li>
+            <li>
+              {language === 'ru'
+                ? 'Чек об оплате государственной пошлины. Оплачивать в банке по реквизитам 500 рублей для студентов с учебными визами, РВП, РВПО или ВНЖ, 1500 рублей – для всех остальных.'
+                : 'Receipt of state fee payment. Pay at the bank: 500 rubles for students with study visas, RVP, RVPO or residence permit, 1500 rubles for all others.'}
+            </li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            {language === 'ru' ? '💡 Когда оформляется новая регистрация' : '💡 When a New Registration is Required'}
+          </h3>
+
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mb-6">
+            <li>{language === 'ru' ? 'При КАЖДОМ въезде в Россию (и получении миграционной карты).' : 'Upon EACH entry into Russia (and receipt of a migration card).'}</li>
+            <li>{language === 'ru' ? 'При получении нового миграционного документа в России (новая учебная виза, РВП, РВПО, ВНЖ, дубликат миграционной карты).' : 'When obtaining a new migration document in Russia (new study visa, RVP, RVPO, residence permit, duplicate migration card).'}</li>
+            <li>{language === 'ru' ? 'Если вы меняете адрес в Петрозаводске, включая новую КОМНАТУ в общежитии.' : 'If you change your address in Petrozavodsk, including a new room in the dormitory.'}</li>
+            <li>{language === 'ru' ? 'После стационарного лечения в больнице и возвращении в общежитие или квартиру из больницы.' : 'After inpatient treatment and returning to a dormitory or apartment from the hospital.'}</li>
+          </ul>
+
+          <p className="text-gray-700 dark:text-gray-300 font-semibold">
+            {language === 'ru'
+              ? '‼️ Оформление регистрации начинается ПОСЛЕ ТОГО, как вы приносите чек об оплате госпошлины. Поэтому просим соблюдать сроки, указанные выше, чтобы не допустить нарушений миграционного законодательства.'
+              : '‼️ Registration starts AFTER you bring the receipt of the state fee payment. Please observe the deadlines mentioned above to avoid violations of migration law.'}
+          </p>
+        </section>
+
+        {documents.map((doc) => (
           <section
             key={doc.id}
             id={doc.id}
