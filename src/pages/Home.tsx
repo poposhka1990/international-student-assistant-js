@@ -36,6 +36,12 @@ const Home = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <section className="text-center mb-12">
+        <img
+              src={heroImage}
+              alt="..."
+              className="w-full h-auto rounded-lg mb-6 object-cover
+                  md:w-1/2 md:mx-auto"
+          />
         <p className="text-lg dark:text-gray-300 text-gray-600 max-w-2xl mx-auto">
           {t('home.subtitle')}
         </p>
@@ -86,18 +92,20 @@ const Home = () => {
         </motion.section>
       </motion.div>
 
-      <img
-        src={heroImage}
-        alt="hero-image"
-        className="w-full h-auto rounded-lg mb-6 object-cover
-        md:w-1/2 md:mx-auto"
-      />
-
               {/* News Section */}
         <motion.section 
           variants={itemVariants}
           className="mb-12 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-lg shadow-lg p-6 border-l-4 border-red-500"
         >
+
+          <img
+              src={newsImage}
+              alt="news-about-registration"
+              className="
+                      w-full h-auto rounded-lg mb-6 object-cover
+                     md:w-1/6 md:max-w-[400px] md:mx-auto md:block
+                  "
+          />
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
             <AlertCircle className="w-6 h-6 mr-2 text-red-500" />
             {language === 'ru' ? 'Важные новости' : 'Important News'}
@@ -121,15 +129,6 @@ const Home = () => {
               </p>
             </div>
           </div>
-
-                    <img
-              src={newsImage}
-              alt="news-about-registration"
-              className="
-                      w-full h-auto rounded-lg mb-6 object-cover
-                     md:w-1/6 md:max-w-[400px] md:mx-auto md:block
-                  "
-          />
         </motion.section>
 
       <LocationMap />
