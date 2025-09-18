@@ -114,7 +114,7 @@ const services = [
     id: 'departure',
     title: { ru: 'Еду домой', en: 'Going Home'},
     description: { 
-      ru: 'Проинформируй о своем отъезд',
+      ru: 'Проинформируй о своем отъезде',
       en: 'Inform about your departure'
     },
     fullDescription: {
