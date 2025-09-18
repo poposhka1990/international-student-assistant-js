@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import LocationMap from '../components/LocationMap';
 import { useLanguage } from '../context/LanguageContext';
 import heroImage from '../img/hero.jpg';
+import newsImage from '../img/news.jpg';
 
 const Home = () => {
   const { t, language } = useLanguage();
@@ -96,6 +97,15 @@ const Home = () => {
           variants={itemVariants}
           className="mb-12 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-lg shadow-lg p-6 border-l-4 border-red-500"
         >
+
+          <img
+              src={newsImage}
+              alt="news-about-registration"
+              className="
+                      w-full h-auto rounded-lg mb-6 object-cover
+                     md:w-1/6 md:max-w-[400px] md:mx-auto md:block
+                  "
+          />
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
             <AlertCircle className="w-6 h-6 mr-2 text-red-500" />
             {language === 'ru' ? 'Важные новости' : 'Important News'}
