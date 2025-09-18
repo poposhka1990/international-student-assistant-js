@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, FileText, GraduationCap, HelpCircle, Calendar, AlertCircle, RefreshCw } from 'lucide-react';
-import DatePicker from 'react-datepicker';
-import { format, addMonths, differenceInMonths, subMonths, subWeeks } from 'date-fns';
-import { ru, enUS } from 'date-fns/locale';
+import { BookOpen, FileText, GraduationCap, HelpCircle, AlertCircle, } from 'lucide-react';
 import "react-datepicker/dist/react-datepicker.css";
 import { motion } from 'framer-motion';
 import LocationMap from '../components/LocationMap';
 import { useLanguage } from '../context/LanguageContext';
+import heroImage from '../img/hero.jpg';
 
 const Home = () => {
   const { t, language } = useLanguage();
@@ -37,9 +35,12 @@ const Home = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-gray-900">
-          {t('home.title')}
-        </h1>
+        <img
+              src={heroImage}
+              alt="..."
+              className="w-full h-auto rounded-lg mb-6 object-cover
+                  md:w-1/2 md:mx-auto"
+          />
         <p className="text-lg dark:text-gray-300 text-gray-600 max-w-2xl mx-auto">
           {t('home.subtitle')}
         </p>
@@ -50,37 +51,8 @@ const Home = () => {
         animate="visible"
         variants={containerVariants}
       >
-        {/* News Section */}
-        <motion.section 
-          variants={itemVariants}
-          className="mb-12 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-lg shadow-lg p-6 border-l-4 border-red-500"
-        >
-          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-            <AlertCircle className="w-6 h-6 mr-2 text-red-500" />
-            {language === 'ru' ? 'Важные новости' : 'Important News'}
-          </h2>
-          
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
-            <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
-              {language === 'ru' 
-                  ? 'С 1 сентября 2025 года оформление временной регистрации в России стало платной услугой‼️'
-                  : 'From September 1, 2025, temporary registration in Russia has become a paid service‼️'
-                }
-            </h3>
-            
-            <div className="space-y-4 text-gray-700 dark:text-gray-300">
-          
-              <p>
-                {language === 'ru'
-                  ? 'Оплата будет производиться вами лично в банке или через банковское приложение. Реквизиты для банка и стоимость уточняйте в международном отделе.'
-                  : 'Payment will be made personally at the bank or through a banking application. Please check the details for a bank and the price with the international department.'
-                }
-              </p>
-            </div>
-          </div>
-        </motion.section>
 
-                {/* Quick Links */}
+      {/* Quick Links */}
         <motion.section 
           variants={itemVariants}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
@@ -118,6 +90,36 @@ const Home = () => {
           </Link>
         </motion.section>
       </motion.div>
+
+              {/* News Section */}
+        <motion.section 
+          variants={itemVariants}
+          className="mb-12 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-lg shadow-lg p-6 border-l-4 border-red-500"
+        >
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
+            <AlertCircle className="w-6 h-6 mr-2 text-red-500" />
+            {language === 'ru' ? 'Важные новости' : 'Important News'}
+          </h2>
+          
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+              {language === 'ru' 
+                  ? 'С 1 сентября 2025 года оформление временной регистрации в России стало платной услугой‼️'
+                  : 'From September 1, 2025, temporary registration in Russia has become a paid service‼️'
+                }
+            </h3>
+            
+            <div className="space-y-4 text-gray-700 dark:text-gray-300">
+          
+              <p>
+                {language === 'ru'
+                  ? 'Оплата будет производиться вами лично в банке или через банковское приложение. Реквизиты для банка и стоимость уточняйте в международном отделе.'
+                  : 'Payment will be made personally at the bank or through a banking application. Please check the details for a bank and the price with the international department.'
+                }
+              </p>
+            </div>
+          </div>
+        </motion.section>
 
       <LocationMap />
 
